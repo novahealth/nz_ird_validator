@@ -5,9 +5,9 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="nz_ird_validator",
-    version="0.0.1",
+    version="0.0.2",
     author="Daniel Cerezo Rodriguez",
-    author_email="daniel@novahealth.co.nz",
+    author_email="danielcerezo.dev@gmail.com",
     description="Package that validates NZ IRD numbers",
     long_description=long_description,
     long_description_content_type="text/markdown",

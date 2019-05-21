@@ -1,20 +1,13 @@
-# nz_ird_validator
-A validator for New Zealand tax numbers (IRD)
-
-## Installation
-
-Follow this guide:
-https://packaging.python.org/tutorials/packaging-projects/
-
-if you would like to create your own package
-
 # IRD VALIDATION PYTHON PACKAGE
 
 A validator for New Zealand tax numbers (IRD)
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+if you would like to create your own package follow the following guide:
+* [Packaging project](https://packaging.python.org/tutorials/packaging-projects/)
 
 ### Installing
 
@@ -42,7 +35,7 @@ else:
 
 ## Authors
 
-* **Daniel Cerezo Rodriguez** - *Initial work* - [Nova Health](https://novahealth.co.nz/)
+* **Daniel Cerezo Rodriguez**
 
 ## License
 

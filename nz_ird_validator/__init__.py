@@ -49,7 +49,7 @@ def is_valid(ird):
     if len((str(ird)[:-1])) == 8:  # check to see if the IRD number has the correct length
         if 10000000 <= int(ird) <= 150000000:  # check to see if the IRD number is in the correct range
             check_digit = ird[8]
-            remainder = get_remainder(ird, 1)
+            remainder = get_remainder(ird, 1)   # calc to get remainder using the first weight factor
             # if remainder is 0 and check digit (last digit of the IRD number) is 0, then IRD number is valid
             if int(remainder) == 0 and int(check_digit) == int(remainder):
                 return True
@@ -58,11 +58,11 @@ def is_valid(ird):
                 remainder = 11 - int(remainder)
                 #  if result is between 0 and 9
             if 0 <= int(remainder) <= 9 and int(remainder) == int(check_digit):
-                # if 11 - remainder = check digit, then IRD number is valid
+                # if remainder = check digit, then IRD number is valid
                 return True
-            # if result is = 10, recalculate weights using the secondary weight factor
+            # if remainder is = 10, recalculate weights using the secondary weight factor
             elif int(remainder) == 10:
-                # calc for each digit using the secondary weight factor
+                # calc to get remainder using the secondary weight factor
                 remainder = get_remainder(ird, 2)
                 # if remainder is 0 and check digit (last digit of the IRD number) is 0, then IRD number is valid
                 if int(remainder) == 0 and int(check_digit) == 0:
@@ -70,6 +70,7 @@ def is_valid(ird):
                 # if remainder is != 0, subtract it from 11
                 elif int(remainder) != 0:
                     remainder = 11 - int(remainder)
+                    # if remainder = check digit, then IRD number is valid
                     if int(remainder) == int(check_digit):
                         return True
     return False

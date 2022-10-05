@@ -1,6 +1,7 @@
 #
 #
 # DON'T FORGET TO CHANGE THE VERSION NUMBER (setup.py) WHEN MAKING ANY CHANGES AND PUSHING TO GITHUB
+# Test comment to test git
 import re
 
 
